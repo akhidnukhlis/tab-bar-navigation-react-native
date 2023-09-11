@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "tabs-react-native",
+    "slug": "tabs-react-native",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "tabs-react-native"
+}
