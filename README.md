@@ -4,8 +4,8 @@
 
 Is a simple tab bar Android application using the React-Native language.
 
-| ![](./assets/demo.png) |
-| --------------------- |
+| ![](./assets/demo1.png) | ![](./assets/demo2.png) |
+| --------------------- | --------------------- |
 
 ## Getting Started
 
