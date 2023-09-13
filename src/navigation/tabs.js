@@ -20,10 +20,10 @@ const CustomTabBarButton = ({ children, onPress }) => (
     onPress={onPress}
   >
     <View style={{
-      width: 70,
-      height: 70,
+      width: 62,
+      height: 62,
       borderRadius: 35,
-      backgroundColor: '#e32f45'
+      backgroundColor: '#E82126'
     }}
     >
       {children}
@@ -35,17 +35,18 @@ const Tabs = () => {
   return (
     <Tab.Navigator
       screenOptions={{
+        headerShown: false, // Use this to hide the header
         tabBarShowLabel: false,
         tabBarStyle: {
             position: "absolute",
             bottom: 25,
-            left: 20,
-            right: 20,
+            left: 18,
+            right: 18,
             elevation: 0,
             backgroundColor: "#ffffff",
-            borderRadius: 26,
+            borderRadius: 30,
             height: 80,
-            ...styles.shadow
+            ...styles.shadow,
         }
       }}
     >
@@ -57,15 +58,12 @@ const Tabs = () => {
                 source={require('../../assets/icons/home.png')}
                 resizeMode='contain'
                 style={{
-                  width: 25,
-                  height: 25,
-                  tintColor: focused ? '#e32f45' : '#748c94'
+                  width: 22,
+                  height: 22,
+                  marginLeft: 20,
+                  tintColor: focused ? '#E82126' : '#D9D9D9'
                 }}
               />
-              <Text
-                style={{ color: focused ? '#e32f45' : '#748c94', fontSize: 12 }}>
-                HOME
-              </Text>
             </View>
           ),
         }}
@@ -78,12 +76,11 @@ const Tabs = () => {
                 source={require('../../assets/icons/find.png')}
                 resizeMode='contain'
                 style={{
-                  width: 25,
-                  height: 25,
-                  tintColor: focused ? '#e32f45' : '#748c94'
+                  width: 22,
+                  height: 22,
+                  tintColor: focused ? '#E82126' : '#D9D9D9'
                 }}
               />
-              <Text style={{ color: focused ? '#e32f45' : '#748c94', fontSize: 12 }}>FIND</Text>
             </View>
           ),
         }}
@@ -95,8 +92,8 @@ const Tabs = () => {
               source={require('../../assets/icons/post.png')}
               resizeMode="contain"
               style={{
-                width: 30,
-                height: 30,
+                width: 24,
+                height: 24,
                 tintColor: '#ffff'
               }}
             />
@@ -114,12 +111,11 @@ const Tabs = () => {
                 source={require('../../assets/icons/setting.png')}
                 resizeMode='contain'
                 style={{
-                  width: 25,
-                  height: 25,
-                  tintColor: focused ? '#e32f45' : '#748c94'
+                  width: 22,
+                  height: 22,
+                  tintColor: focused ? '#E82126' : '#D9D9D9'
                 }}
               />
-              <Text style={{ color: focused ? '#e32f45' : '#748c94', fontSize: 12 }}>SETTING</Text>
             </View>
           ),
         }}
@@ -132,12 +128,12 @@ const Tabs = () => {
                 source={require('../../assets/icons/chat.png')}
                 resizeMode='contain'
                 style={{
-                  width: 25,
-                  height: 25,
-                  tintColor: focused ? '#e32f45' : '#748c94'
+                  width: 22,
+                  height: 22,
+                  marginRight: 20,
+                  tintColor: focused ? '#E82126' : '#D9D9D9'
                 }}
               />
-              <Text style={{ color: focused ? '#e32f45' : '#748c94', fontSize: 12 }}>CHAT</Text>
             </View>
           ),
         }}
@@ -148,7 +144,7 @@ const Tabs = () => {
 
 const styles = StyleSheet.create({
   shadow: {
-    shadowColor: "#7F5DF0",
+    shadowColor: "#D9D9D9",
     shadowOffset: {
       width: 0,
       height: 10,
